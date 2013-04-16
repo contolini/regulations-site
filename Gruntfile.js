@@ -10,32 +10,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     /**
-     * Here's a banner with some template variables.
-     * We'll be inserting it at the top of minified assets.
-     */
-    banner: 
-      '/*                        _                                          \n' +
-      '                         //\\                                         \n' +
-      '                         V  \\                                        \n' +
-      '                          \\  \\_                                      \n' +
-      '            /$$$$$$        \\,".`.                                    \n' +
-      '           /$$__  $$       |\\ `. `.                                  \n' +
-      '  /$$$$$$$| $$  \\__//$$$$$$\\ \\  `. `-.                        _,.-:\\ \n' +
-      ' /$$_____/| $$$$   /$$__  $$\\ \\   `.  `-._             __..--" "-";/ \n' +
-      '| $$      | $$_/  | $$  | $$ \\ `.   `-.   `-..___..---"   _.--" ,"/  \n' +
-      '| $$      | $$    | $$  | $$  `. `.    `-._        __..--"    ," /   \n' +
-      '|  $$$$$$$| $$    | $$$$$$$/    `. `-_     ``--..""       _.-" ,"    \n' +
-      ' \\_______/|__/    | $$____/       `-_ `-.___        __,--"   ,"      \n' +
-      '                  | $$               `-.__  `----"""    __.-"        \n' +
-      '                  | $$                    `--..____..--"             \n' +
-      '                  |__/                                               \n\n' +
-      '* <%= pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
-
-    /**
      * Recess: https://github.com/sindresorhus/grunt-recess
      * 
      * Compile, concat and compress LESS files.
