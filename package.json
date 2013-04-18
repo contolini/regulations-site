@@ -37,7 +37,8 @@
     "grunt": "~0.4.1"
   },
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-template-jasmine-requirejs": "~0.1.1"
   },
   "keywords": []
 }
