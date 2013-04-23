@@ -1,13 +1,4 @@
 {
-  "name": "regulations-site",
-  "description": "Yet another amazing CFPB project",
-  "version": "0.1.0",
-  "homepage": "http://consumerfinance.gov",
-  "author": {
-    "name": "Consumer Financial Protection Bureau",
-    "email": "theresa.summa@cfpb.gov",
-    "url": "http://consumerfinance.gov"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/theresaanna/regulations-site.git"
@@ -15,12 +6,6 @@
   "bugs": {
     "url": "https://github.com/theresaanna/regulations-site/issues"
   },
-  "licenses": [
-    {
-      "type": "Apache",
-      "url": "http://consumerfinance.gov/blob/master/LICENSE-Apache"
-    }
-  ],
   "engines": {
     "node": ">=0.8.0"
   },
