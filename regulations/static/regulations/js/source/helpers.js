@@ -218,11 +218,11 @@ if (!Array.prototype.indexOf) {
     },
 
     // returns newer version. findVersion will return base version
-    findDiffVersion: function(currentVersion) {
+    findDiffVersion: function(currentVersion, element) {
         var version;
         currentVersion = currentVersion || this.findVersion();
 
-        version = $('#table-of-contents').attr('data-from-version');
+        version = element.attr('data-from-version');
 
         if (!version || version === currentVersion) {
             version = $('#timeline li.current .version-link').filter(function() {

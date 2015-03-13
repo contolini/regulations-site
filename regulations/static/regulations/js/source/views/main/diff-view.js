@@ -11,10 +11,11 @@ var ChildView = require('./child-view');
 Backbone.$ = $;
 
 var DiffView = ChildView.extend({
+    var table-element= $('#table-view'),
     initialize: function() {
         this.id = this.options.id;
         this.baseVersion = this.options.baseVersion;
-        this.newerVersion = this.options.newerVersion || Helpers.findDiffVersion(this.baseVersion);
+        this.newerVersion = this.options.newerVersion || Helpers.findDiffVersion(this.baseVersion, table-element);
         this.fromVersion = this.options.fromVersion || this.newerVersion;
         // we preserve the section id as is in config obj because
         this.options.sectionId = this.id;

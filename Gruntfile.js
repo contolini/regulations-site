@@ -108,11 +108,26 @@ module.exports = function(grunt) {
       }
     },
 
-    mocha: {
-      test: {
-        src: ['<%= env.frontEndPath %>/js/unittests/runner.html'],
+    // mocha: {
+    //   test: {
+    //     src: ['<%= env.frontEndPath %>/js/unittests/runner.html'],
+    //     options: {
+    //       run: true
+    //     }
+    //   }
+    // },
+
+    mocha_istanbul: {
+      coverage: {
+        src: ['<%= env.frontEndPath %>/js/unittests/specs/*.js'],
         options: {
-          run: true
+          harmony: true,
+          coverageFolder: 'test/coverage',
+          coverage: true,
+          check: {
+            lines: 50,
+            statements: 50
+          }
         }
       }
     },

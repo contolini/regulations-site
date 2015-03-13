@@ -1,15 +1,18 @@
 var $ = require('jquery');
 var Helpers = require('../../source/helpers');
+var chai = require('chai');
+var expect = chai.expect;
 
 describe("Helper functions", function() {
+
     it("isIterable should do what it says on the tin", function(){
-        expect(Helpers.isIterable([])).to.be.ok();
+        chai.expect(Helpers.isIterable([])).to.be.ok();
 
-        expect(Helpers.isIterable({})).to.be.ok();
+        chai.expect(Helpers.isIterable({})).to.be.ok();
 
-        expect(Helpers.isIterable('dsdf')).to.be(false);
+        chai.expect(Helpers.isIterable('dsdf')).to.be(false);
 
-        expect(Helpers.isIterable(4345)).to.be(false);
+        chai.expect(Helpers.isIterable(4345)).to.be(false);
     });
 
     it("interpId should return the correct title for the type of supplement", function(){
